@@ -9,3 +9,21 @@ service/development exposed
 (.devops) KUN-YENdeMacBook-Pro:Udacity_CloudDevops_Project_5 KEN$ kubectl get pod
 NAME                           READY   STATUS    RESTARTS   AGE
 development-589cf9bc7b-hjmgq   1/1     Running   0          5m10s
+
+
+(.devops) KUN-YENdeMacBook-Pro:Udacity_CloudDevops_Project_5 KEN$ minikube service dev
+|-----------|------|-----------------------------|
+| NAMESPACE | NAME |             URL             |
+|-----------|------|-----------------------------|
+| default   | dev  | http://192.168.99.102:31578 |
+|-----------|------|-----------------------------|
+🎉  Opening kubernetes service  default/dev in default browser...
+
+
+(.devops) KUN-YENdeMacBook-Pro:Udacity_CloudDevops_Project_5 KEN$ ./make_prediction2.sh 
+Port: 31578
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}

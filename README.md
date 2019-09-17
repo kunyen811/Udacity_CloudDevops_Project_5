@@ -23,6 +23,17 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ---
 
+### File explanation
+* config.yml: CircleCI configuration file
+* app.py: Python flask app for API calls
+* Dockerfile: Dockerfile for building the image
+* make_prediction.sh: Send a request to the Python flask app to get a prediction(localhost)
+* make_prediction_kubernetes.sh: Send a request to the Python flask app to get a prediction(minikube,kubernetes)
+* Makefile: environment setup and lint tests
+* run_docker.sh: docker run locally script
+* run_kubernetes.sh: kubernetes run locally script
+* upload_docker.sh: upload image to docker script
+
 ## Setup the Environment
 
 * Create a virtualenv and activate it
