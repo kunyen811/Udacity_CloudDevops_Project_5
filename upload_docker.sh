@@ -11,7 +11,7 @@ dockerpath=kunyen811/dev
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker tag dec76a6067d7 $dockerpath
+docker tag 94d76b9b47f9 $dockerpath
 
 # Step 3:
 # Push image to a docker repository

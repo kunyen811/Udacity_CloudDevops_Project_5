@@ -1,19 +1,11 @@
 <paste log output from Kubernetes-mediated prediction, here>
-KUN-YENdeMBP:project-ml-microservice-kubernetes KEN$ ./run_kubernetes.sh 
+(.devops) KUN-YENdeMacBook-Pro:Udacity_CloudDevops_Project_5 KEN$ ./run_kubernetes.sh 
 kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
-deployment.apps/dev created
-NAME                   READY   STATUS              RESTARTS   AGE
-dev-5774b8b964-bdjnc   0/1     ContainerCreating   0          0s
-service/dev exposed
-KUN-YENdeMBP:project-ml-microservice-kubernetes KEN$ kubectl get pod
-NAME                   READY   STATUS              RESTARTS   AGE
-dev-5774b8b964-bdjnc   0/1     ContainerCreating   0          54s
-KUN-YENdeMBP:project-ml-microservice-kubernetes KEN$ kubectl get pod
-NAME                   READY   STATUS              RESTARTS   AGE
-dev-5774b8b964-bdjnc   0/1     ContainerCreating   0          56s
-KUN-YENdeMBP:project-ml-microservice-kubernetes KEN$ kubectl get pod
-NAME                   READY   STATUS              RESTARTS   AGE
-dev-5774b8b964-bdjnc   0/1     ContainerCreating   0          59s
-KUN-YENdeMBP:project-ml-microservice-kubernetes KEN$ kubectl get pod
-NAME                   READY   STATUS    RESTARTS   AGE
-dev-5774b8b964-bdjnc   1/1     Running   0          5m57s
+deployment.apps/development created
+NAME                           READY   STATUS              RESTARTS   AGE
+development-589cf9bc7b-hjmgq   0/1     ContainerCreating   0          0s
+service/development exposed
+
+(.devops) KUN-YENdeMacBook-Pro:Udacity_CloudDevops_Project_5 KEN$ kubectl get pod
+NAME                           READY   STATUS    RESTARTS   AGE
+development-589cf9bc7b-hjmgq   1/1     Running   0          5m10s
