@@ -1,4 +1,3 @@
-<include a CircleCI status badge, here>
 [![CircleCI](https://circleci.com/gh/kunyen811/Udacity_CloudDevops_Project_5.svg?style=svg)](https://circleci.com/gh/kunyen811/Udacity_CloudDevops_Project_5)
 
 ## Project Overview
@@ -34,6 +33,14 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
+
+### Verify the application is running
+
+Use make prediction script `./make_prediction.sh`
+
+### Upload to the Docker Hub
+
+Use `./upload_docker` Push image to a docker repository
 
 ### Kubernetes Steps
 
