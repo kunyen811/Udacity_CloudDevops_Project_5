@@ -11,6 +11,7 @@ dockerpath=kunyen811/dev
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login --username kunyen811
 docker tag 94d76b9b47f9 $dockerpath
 
 # Step 3:
